@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Face Recognition </title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"> </script> 
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"> </script>  
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <center>
+            <h1 style="font-size: 40px;"> FACE RECOGNITION WEB APP </h1>
+            <h3 style="font-weight: lighter;"> Model is trained to identify the following objects: </h3>
+            <br>
+            <button id="btn_mother"> Mother </button>
+            <br> <br>
+            <button id="btn_kushal"> Me </button>
+            <br> <br>
+            <button id="btn_father"> Grandfather </button>
+            <br> <br>
+            <button id="btn_mother"> Grandmother </button>
+            <br> <br>
+            <button id="btn2" style="width: 150px; height: 40.5px; font-size: 16px; color: rgb(255, 255, 255); background-color: green; border-radius: 4px;" class="btn btn-primary" onclick="take_snapshot()"> Capture Image </button>
+            <br>    
+            <h3 style="color: black; font-weight: bold; "> Webcam View - </h3>
+            <div id="camera" style="border: 2px dashed black; width: 350px; height: 300px;"> </div>
+            <br>
+            <h3 style="color: black; font-weight: bold;"> Image Output - </h3>
+            <div id="output" style="border: 2px dashed black; width: 350px; height: 300px;"> </div>
+            <br>
+            <button id="btn2" style="width: 150px; height: 40.5px; font-size: 16px; color: rgb(255, 255, 255); background-color: green; border-radius: 4px;" class="btn btn-primary" onclick="check()"> Identify Image </button>
+            <h3 style="color: red;"> Name: <span id="name">  </span> </h3>
+            <h3 style="color: red;"> Accuracy: <span id="accuracy"> </span> </h3>
+        </center>
+    </body>
+    <script src="main.js"> </script> 
+</html>

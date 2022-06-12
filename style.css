@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: pink;
+}
+
+h1, h3 {
+    color: white;
+}
+
+#btn_father, #btn_mother, #btn_kushal {
+    background-color: blue; 
+    color: white; 
+    height: 35px; 
+    width: 700px; 
+    border-radius: 4px; 
+    border-color: blue; 
+    font-size: 15px;
+}
